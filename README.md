@@ -16,3 +16,4 @@ Example:
 
 - platform: nilu
   region: Oslo,Manglerud
+  

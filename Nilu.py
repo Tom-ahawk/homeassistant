@@ -1,6 +1,6 @@
 """
 Nilu - Norsk institutt for luftforskning (Norwegian Institute for Air Research)
-https://www.nilu.no/
+www.nilu.no
 www.luftkvalitet.info
 
 Sensor code for Home Assistant, using Nilu API for getting air quality measurement components/value from  stations in Norway.

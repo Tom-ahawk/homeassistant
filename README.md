@@ -1,4 +1,4 @@
-# Homeassistant
+# Homeassistant - Air Quality Measurement Sensor for Norway
 
 "Air pollution - from traffic, industrial or natural sources – can have a major impact on the environment, human health and ecosystems at all scales. (Nilu)"
 

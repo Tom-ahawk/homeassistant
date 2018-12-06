@@ -16,3 +16,6 @@ Example:
 - platform: nilu
   region: Oslo,Manglerud
   
+The code was initially developed by clyra, 
+https://github.com/clyra/homeassistant/blob/master/custom_components/sensor/nilu.py
+And slightly modified by me

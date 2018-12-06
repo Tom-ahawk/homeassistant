@@ -13,6 +13,6 @@ Note, different stations can deliver different measurement components. The value
 Input parameters are “area” and “location”. Find your area/location at www.luftkvalitet.info
 
 Example:
- "- platform: nilu
-   region: Oslo,Manglerud"
+- platform: nilu
+  region: Oslo,Manglerud
   

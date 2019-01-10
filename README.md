@@ -8,7 +8,7 @@ The Home Assistant sensor uses the Nilu API for getting pollution data from meas
 
 The code creates separate sensors for every station/component. In addition a sensor ending in ”_max” . This sensor has the component with the highest health risk.
 
-Note, different stations can deliver different measurement components. The value scale for each component is individual when it comes to health risk. Meaning, components with the same value, does not necessarily represent the same health risk. Component/value is mapped to the health risk scale and is represented by the attributes “index/color/message”. Index 1 to 6 (-highest health risk), color code as represented at www.luftkvalitet.info.
+Note, different stations can deliver different measurement components. The value scale for each component is individual when it comes to health risk. Meaning, components with the same value, does not necessarily represent the same health risk. Component/value is mapped to the health risk scale and is represented by the attributes “index/color/message (Low/Moderate/Significant/Serious health risk)”. Index 1 to 6 (-highest health risk), color code as represented at www.luftkvalitet.info.
 
 Input parameters are “area” and “location”. Find your area/location at www.luftkvalitet.info
 

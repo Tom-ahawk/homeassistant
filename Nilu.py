@@ -3,7 +3,9 @@ Nilu - Norsk institutt for luftforskning (Norwegian Institute for Air Research)
 www.nilu.no
 www.luftkvalitet.info
 
-Sensor code for Home Assistant, using Nilu API for getting air quality measurement components/value from  stations in Norway.
+Sensor code for Home Assistant, using Nilu API for getting air quality measurement components/value from stations in Norway.
+
+Version 0.0.3
 """
 
 from datetime import timedelta
@@ -27,7 +29,6 @@ from homeassistant.helpers import template
 REQUIREMENTS = []
 
 _LOGGER = logging.getLogger(__name__)
-__version__ = '0.0.2'
 
 DOMAIN = 'sensor'
 ENTITY_ID_FORMAT = DOMAIN + '.{}'
@@ -65,7 +66,7 @@ class NiluSensor(Entity):
     def name(self):
         """Return the name of the sensor."""
         return self._name
-
+        
     @property
     def unit_of_measurement(self):
         """Return the unit of measurement."""
@@ -97,7 +98,6 @@ class NiluSensor(Entity):
             self._state = "{0:.2f}".format(value)
             self._attributes = self._data.attrs[self._component] 
 
-    
 
 class NiluSensorData(object):
     """
@@ -142,10 +142,14 @@ class NiluSensorData(object):
           component = myData[i]['component'].replace(".","")
           self.attrs[component] = myData[i]
 
+          myData[i].update({'provider' : 'NILU - Norwegian Institute for Air Research'})
+          
           if i==0:
             self.attrs['max'] = myData[i]
           elif myData[i]['index'] > self.attrs['max']['index']:
             self.attrs['max'] = myData[i]
+
+
 
     def update(self):
         self.get_data()

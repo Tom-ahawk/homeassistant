@@ -1,6 +1,6 @@
 # Home Assistant - Air Quality Measurement Sensor for Norway
 
-"Air pollution - from traffic, industrial or natural sources – can have a major impact on the environment, human health and ecosystems at all scales." (Nilu- Norsk institutt for luftforskning (Norwegian Institute for Air Research)
+"Air pollution - from traffic, industrial or natural sources – can have a major impact on the environment, human health and ecosystems at all scales." Nilu- Norsk institutt for luftforskning (Norwegian Institute for Air Research).
 
 Sensor code for Home Assistant, using Nilu API, for getting air quality measurement components/value from stations in scattered around Norway.
 

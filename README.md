@@ -13,7 +13,7 @@ Note, different stations can deliver different measurement components. The value
 Input parameters are “area” and “location”. Find your area/location at www.luftkvalitet.info
 
 Example:
-- platform: nilu <br>
+<-> platform: nilu <br>
   region: Oslo,Manglerud
   
 Add the nilu.py file your HA, to /config/custom_components/sensor/nilu.py

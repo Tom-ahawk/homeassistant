@@ -16,7 +16,7 @@ Example:
 - platform: nilu
   region: Oslo,Manglerud
   
-Add the nilu.py file your HA, to /config/custom_components/sensor/nilu.py
+Add the nilu.py file to /config/custom_components/sensor/nilu.py
   
 The code was initially developed by @clyra, and slightly modified by me.
 https://github.com/clyra/homeassistant/blob/master/custom_components/sensor/nilu.py
